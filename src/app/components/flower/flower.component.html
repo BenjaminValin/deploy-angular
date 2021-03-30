@@ -1,0 +1,13 @@
+<h3>Flower Power</h3>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nom</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of flowers$ | async">
+            <td>{{f.id}}</td>
+            <td>{{f.name}}</td>
+        </tr>
+    </tbody>
+</table>
